@@ -8,9 +8,11 @@ import (
     apperror "sedb/entity/error"
 )
 
+// Send type used for saving data
 type Send struct {
 }
 
+// Execute endpoint saves data
 func (e Send) Execute(data entity.Data) error {
     item := &asset.Asset{}
     for _, v := range data {
