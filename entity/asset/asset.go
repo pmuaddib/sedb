@@ -3,10 +3,10 @@ package asset
 import (
     "fmt"
     "github.com/asaskevich/govalidator"
-    reader "github.com/pmuaddib/sedb/entity/asset/reader/db"
-    "github.com/pmuaddib/sedb/entity/asset/writer/db"
-    apperror "github.com/pmuaddib/sedb/entity/error"
     "math"
+    reader "sedb/entity/asset/reader/db"
+    "sedb/entity/asset/writer/db"
+    apperror "sedb/entity/error"
     "time"
 )
 

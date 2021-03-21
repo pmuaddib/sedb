@@ -2,8 +2,8 @@ package db
 
 import (
     "fmt"
-    "github.com/pmuaddib/sedb/entity/dbase"
-    apperror "github.com/pmuaddib/sedb/entity/error"
+    "sedb/entity/dbase"
+    apperror "sedb/entity/error"
 )
 
 // Table name to work with

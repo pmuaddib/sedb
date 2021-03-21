@@ -2,17 +2,14 @@ package main
 
 import (
     "fmt"
-    "github.com/pmuaddib/sedb/entity"
-    "github.com/pmuaddib/sedb/entity/config/yaml"
-    apperror "github.com/pmuaddib/sedb/entity/error"
-    entry "github.com/pmuaddib/sedb/server/entrypoint"
+    "sedb/entity"
+    "sedb/entity/config/yaml"
+    apperror "sedb/entity/error"
+    entry "sedb/server/entrypoint"
     "io/ioutil"
     "log"
     "net/http"
 )
-
-// {"user_id": "134256", "currency": "EUR", "amount": 1000, "time_placed" : "24-JAN-20 10:27:44", "type": "deposit"}
-// curl -X POST -d '{"user_id": "134256", "currency": "EUR", "amount": 1000, "time_placed" : "24-JAN-20 10:27:44", "type": "deposit"}' 127.0.0.1:8082/send
 
 const (
     success = "Ok"

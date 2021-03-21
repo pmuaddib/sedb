@@ -4,8 +4,8 @@ import (
     "database/sql"
     "fmt"
     _ "github.com/go-sql-driver/mysql"
-    "github.com/pmuaddib/sedb/entity/config/yaml"
-    apperror "github.com/pmuaddib/sedb/entity/error"
+    "sedb/entity/config/yaml"
+    apperror "sedb/entity/error"
 )
 
 const maxConns = 10

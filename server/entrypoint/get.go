@@ -3,9 +3,9 @@ package entrypoint
 import (
     "encoding/json"
     "fmt"
-    "github.com/pmuaddib/sedb/entity"
-    "github.com/pmuaddib/sedb/entity/asset"
-    apperror "github.com/pmuaddib/sedb/entity/error"
+    "sedb/entity"
+    "sedb/entity/asset"
+    apperror "sedb/entity/error"
     "io"
     "strconv"
 )

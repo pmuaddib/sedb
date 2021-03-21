@@ -2,8 +2,8 @@ package main
 
 import (
     "bytes"
-    "github.com/pmuaddib/sedb/entity/dbase"
-    apperror "github.com/pmuaddib/sedb/entity/error"
+    "sedb/entity/dbase"
+    apperror "sedb/entity/error"
     "net/http"
     "net/http/httptest"
     "strings"

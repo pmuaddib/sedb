@@ -2,8 +2,8 @@ package yaml
 
 import (
     "fmt"
-    "github.com/pmuaddib/sedb/entity"
-    apperror "github.com/pmuaddib/sedb/entity/error"
+    "sedb/entity"
+    apperror "sedb/entity/error"
     "gopkg.in/yaml.v2"
     "os"
 )
