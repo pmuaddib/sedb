@@ -2,10 +2,10 @@ package main
 
 import (
     "bytes"
-    "sedb/entity/dbase"
-    apperror "sedb/entity/error"
     "net/http"
     "net/http/httptest"
+    "sedb/entity/dbase"
+    apperror "sedb/entity/error"
     "strings"
     "testing"
 )
@@ -45,7 +45,7 @@ func TestSendCorrectMethod(t *testing.T) {
     expected := success
     s := strings.Trim(rr.Body.String(), "\n")
     if s != expected {
-       t.Errorf("handler returned unexpected body: got %v want %v", s, expected)
+        t.Errorf("handler returned unexpected body: got %v want %v", s, expected)
     }
 
     cleanDbTable(9000, t)

@@ -2,17 +2,17 @@ package main
 
 import (
     "fmt"
+    "io/ioutil"
+    "log"
+    "net/http"
     "sedb/entity"
     "sedb/entity/config/yaml"
     apperror "sedb/entity/error"
     entry "sedb/server/entrypoint"
-    "io/ioutil"
-    "log"
-    "net/http"
 )
 
 const (
-    success = "Ok"
+    success     = "Ok"
     reqUserName = "userId"
 )
 
@@ -38,7 +38,7 @@ func registerMux() *http.ServeMux {
 func getAddr(v entity.Config) string {
     storage := v.(*yaml.Storage)
 
-    h, ok := storage.GetVal("server","host")
+    h, ok := storage.GetVal("server", "host")
     if !ok {
         apperror.ProcessFatal(fmt.Errorf("%s", "Can't get host value"))
     }
